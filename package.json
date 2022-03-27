@@ -13,6 +13,7 @@
   "homepage": "https://github.com/printPDA-6/projetoDH-1#readme",
   "dependencies": {
     "express": "^4.17.3",
+    "moment": "^2.29.1",
     "nodemon": "^2.0.15"
   }
 }
