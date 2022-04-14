@@ -1,10 +1,11 @@
 const express = require('express');
 const res = require('express/lib/response');
+const path = require('path');
 const app = express();
 const port = 8080;
 
-app.get('/',(req, res) => {
-    res.send('quero um livro')
+app.get('/inicio',(req, res) => {
+    res.send('')
 })
 
 app.get('/sobre',(req,res) =>{
@@ -16,5 +17,5 @@ app.get('/catalogo',(req, res) => {
 })
 
 app.listen(port, function() {
-    console.log ('Express on!'+ port)
+    console.log ('Express on! na porta '+ port)
 })

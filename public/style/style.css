@@ -1,8 +1,9 @@
-.main-header{
+.header{
+    font:  18px arial,sans-serif;
+    background-color: #fdffff69;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ;
 
 }
 
@@ -27,21 +28,25 @@ a{
 li{
     list-style: none;
     /* color: #403b3b; */
-    color: #000000;
+    color:  #0c5149;
     display: flex;
     display: inline-block;
     margin: 20px;
 }
 
-.anu{
+/* .tooltip{
+    width: 100%;
+} */
+
+.button-Entrar{
     border: 2px solid rgb(110, 20, 167);
     padding: 10px;
     border-radius:10px;
-    margin-right: 5px;
+    margin-right: 10px;
     
 }
 
-.anu:hover{
+.button-Entrar:hover{
     background-color: rgb(132, 14, 201);
     border: 2px solid rgb(81, 2, 128);
     border-radius: 50px;
@@ -51,26 +56,49 @@ li{
 
 li:hover{
   
-    color: #ffd41f;
+    color: #ffcc00;
     transition: 0.1s all;
     
 }
 
-.cont-pesq{
-    background-color: rgb(132, 14, 201);
-    
-}
-
-con-input{
-    align-items: center;
-}
-
-input{
+.input-container{
     display: flex;
-    width: 60rem;
-    height: 2.5rem;
-    margin: 30px;
+    justify-content:center;
+}
+
+.input-filde{
     border: none;
-    margin-left: 170px;
-    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-size:20px ;
+    margin: none;
+    width: 75%;
+    height: 3rem;
+    margin-top: 1rem;
+}
+.list-prod{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.img-back{
+    width: 75%;
+    background-color: #ffffff;
+    border-radius:50px;
+}
+ .container-lot{
+    background-color: #170985; 
+} 
+.buton-style{
+    border:none;
+    box-sizing: border-box;
+    margin-right: 4px;
+    width:3%;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.search-icon{
+    color:rgb(76, 76, 76);
 }
