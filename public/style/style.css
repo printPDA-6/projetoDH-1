@@ -87,6 +87,22 @@ li{
     margin: 20px;
 }
 
+img{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-card{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
 
 
 .button-Entrar{
@@ -98,11 +114,40 @@ li{
 }
 
 .button-Entrar:hover{
-    background-color: rgb(132, 14, 201);
-    border: 2px solid rgb(81, 2, 128);
+    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
+    border: 2px solid rgb(144, 83, 180);
     border-radius: 50px;
     color: white;
     transition: 0.79s all;
+}
+.img-opc{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-card{
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.img-opc:hover{
+    opacity: 0.3;
+}
+
+.img-card:hover{
+    opacity: 1;
+}
+.text-opc{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 li:hover{
@@ -226,6 +271,30 @@ span:hover {
     font-size: 26px;
     font-weight: 300;
     color: #666;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clearfix{
+    content: "";
+    width: 137px;
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 221px;
+    clear: inline-start;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    margin-top:8px;
+}
+
+.clearfi2{
+    margin: auto;
+    width: 207px;
+    height: 210px;
+    margin-top: 10px;
 }
 
 .menu-text{
