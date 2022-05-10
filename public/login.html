@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style-login.css">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" style="border-radius:50%;height:50px;width:50;">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div class="top">
+        <a href="index.html"><img src="img/logo2.png" alt="" width="50" style="border-radius:50%;height:50px; margin-bottom:630px;"></a>
+    </div>
+    <div class="container">
+        
+        <div class="form-img">
+            <img src="img/undraw_secure_login_pdn4.svg" alt="img" width="450px">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+
+                    <div class="title-form">
+
+                        <h1>Cadastre-se</h1>
+                    </div>
+
+                    <div class="login-button">
+
+                        <button><a href="#">Entrar</a></button>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+
+                        <label for="firstname">Nome</label>
+
+                        <input id ="firstname" type="text" name = "firstname"placeholder="Digite seu nome" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label for="lastname">CEP</label>
+
+                        <input id ="lastname" type="text" name = "lastname"placeholder="Digite o seu CEP" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label for="gmail">E-mail</label>
+
+                        <input id ="gmail" type="email" name = "gmail"placeholder="Digite seu Gmail" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label for="number">CPF</label>
+
+                        <input id ="number" type="tel" name = "number"placeholder="nº 000.000.000-00" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label for="password">Senha</label>
+
+                        <input id ="password" type="password" name = "password"placeholder="Digite sua senha" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label for="confirme-password">Comfirme sua Senha</label>
+
+                        <input id ="confirme-password" type="password" name = "confirme-password"placeholder="Digite sua senha" required>
+
+                    </div>
+                </div>
+
+                <div class="gener-group">
+                    <select class = "selct-generous" name="" id="selct-generous">
+                        <option value = "Masq">Masculino</option>
+                        <option value = "female">Femenino</option>
+                        <option value = "outro">Outro</option>
+                        <option value = "null">Prefiro não dizer</option>
+                    </select>
+                </div>
+
+
+                <div class="continue-button">
+                    <button type="submit" id="continue"><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
