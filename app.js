@@ -1,13 +1,16 @@
 const express = require('express');
 const app = express();
+const port = 9000
+
+
+app.set("view engine" , "ejs");
 
 app.get('/',(req,res) =>{
-
-    res.sendFile(__dirname + '/public/index.html');
+  res.render("pages/index.html")
 })
 
 
 
-app.listen(8080 , ()=> {
-    console.log ('Servidor funcionando na Url:'+"http://localhost:8080")
+app.listen(port , ()=> {
+    console.log ('Servidor funcionando na Url:'+"http://localhost:"+port)
 });

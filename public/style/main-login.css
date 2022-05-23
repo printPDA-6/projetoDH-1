@@ -49,11 +49,11 @@ body{
     border:none;
     padding: 0.4rem 1rem;
     cursor: pointer;
-    background-color: rgba(148, 200, 255, 0.654);
+    background-color: rgb(9, 78, 153);
     border-radius:5%;
 }
 .login-button button:hover{
-    background-color: rgba(142, 197, 255, 0.322);
+   color: blueviolet;
 
 }
 .login-button a{
@@ -161,6 +161,7 @@ label:hover{
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .continue-button button:hover {
@@ -174,4 +175,11 @@ label:hover{
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
+}
+.conta-true{
+    color: #fff;
+}
+.conta-true:hover{
+    
+    color: #ddff00;
 }

@@ -1,0 +1,251 @@
+
+/* paletas de cores */
+.color-main{
+    color:  #606BF8;
+    color:  #171D1C;
+    color:  #ffffff;
+    color:  #7166C2;
+    color:  #00A1F1;
+    color:  #00D2F2;
+    color:  #5FFBD6;
+}
+
+body{
+    background-color: #b7b3b333;
+    display: flex;
+    justify-content: center;   
+}
+
+header{
+    flex-direction: row;
+    font:  13px arial,sans-serif;
+    background-color: #ffffff;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+/* CSS de toda a pagina */
+.container-all{
+   height: 50%;
+}
+ /* Css de container que engloba a logo e buscar do header */
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+ /* Css da logo */
+.logo{
+    height: 9%;
+    width: 25%;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+ul{
+    margin:1 ;
+    margin-bottom:0;
+}
+
+a{
+    text-decoration: none;
+}
+  
+li{
+    list-style: none;
+    color:  #0c5149;
+    display: flex;
+    display: inline-block;
+    margin: 20px;
+}
+
+li:hover{
+  
+    color: #ffcc00;
+    transition: 0.1s all;
+    
+}
+
+.button-criar-conta{
+    border: 2px solid rgb(110, 20, 167);
+    padding: 10px;
+    border-radius:10px;
+    margin-right: 10px;
+    
+}
+
+.button-criar-conta:hover{
+    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
+    border: 2px solid rgb(144, 83, 180);
+    border-radius: 50px;
+    color: rgb(255, 238, 4);
+    transition: 0.79s all;
+}
+/* Css do container que engloba o inputs de pesquisa e os icons de navegação do header */
+.container-header{
+    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
+} 
+
+/* Css de um container que engloba o inoput text e o botão */
+.container-search{
+    display: flex;
+    justify-content:center;
+}
+/* Css do input de pesquisa */
+.search{
+    padding:1em;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font:10px ;
+    margin: none;
+    width: 75%;
+    height: 3rem;
+    margin-top: 1rem;
+    border-start-start-radius:20px;
+    border-end-start-radius:20px; 
+}
+/* Css do icon que fica dentro do botão de pesquisa */
+.search-icon{
+    color:rgb(76, 76, 76);
+}
+/* Css da div incos-navs do header */
+.header-nav-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+/* Css dos incos em si */
+.icos-header{
+    display: flex;
+    width: 96px;
+    /* background-image: linear-gradient( 138deg,  rgba(32, 199, 255, 0.577) 36.7%, rgba(0,8,187,1) 84.4%, rgba(255,255,255,1) 119.7% ); */
+    border-radius:250px;
+    background-color: rgb(6, 13, 110);
+}
+
+span{
+    color: #ffffff;
+    font-weight: bold;
+    bottom: 0;
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+span:hover {
+    color: #ffcc00;
+    font:  21px arial,sans-serif;
+    transition: 0.98s all;
+}
+
+.carousel{
+    margin-top: 0.1rem;
+}
+
+.section-h2{
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 300;
+    color: #666;
+}
+/* Css dos testo de informação encima das imagens de intes no body */
+.info-text{
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.info-text a{
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-card{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+img{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-opc:hover{
+    opacity: 0.3;
+}
+
+.img-card:hover{
+    opacity: 1;
+}
+
+.clearfix{
+    content: "";
+    width: 137px;
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 221px;
+    clear: inline-start;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    margin-top:8px;
+}
+
+.clearfi2{
+    margin: auto;
+    width: 207px;
+    height: 210px;
+    margin-top: 10px;
+}
+
+.buton-style{
+    border:none;
+    box-sizing: border-box;
+    margin-right: 4px;
+    width:3%;
+    height: 3rem;
+    margin-top: 1rem;
+    border-start-end-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.img-card{
+    max-width: 200px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.img-phone{
+    width: 165px;
+    margin: auto;
+}
+
+.footer-fixed{
+    color: #fff;
+    margin-top:100px;
+    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
+}

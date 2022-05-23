@@ -14,8 +14,6 @@ body{
 }
 .container-{
    height: 50%;
-  
-
 }
 
 .container-all-pesq{
@@ -87,6 +85,7 @@ li:hover{
 }
 
 .search{
+    
     padding:1em;
     border: none;
     box-sizing: border-box;
@@ -102,6 +101,7 @@ li:hover{
 }
 
 .buton-style{
+    background-color: #dcdcdc;
     border:none;
     box-sizing: border-box;
     margin-right: 4px;
@@ -118,7 +118,8 @@ li:hover{
 }
 
 .search-icon{
-    color:rgb(76, 76, 76);
+   
+    color:rgb(0, 0, 0);
 }
 
 .intes-pag{
@@ -127,20 +128,63 @@ li:hover{
     justify-content: center;
 }
 
-.palet-color{
-    color:  #606BF8;
-    color:  #171D1C;
-    color:  #fff;
-    color:  #7166C2;
-    color:  #00A1F1;
-    color:  #00D2F2;
-    color:  #5FFBD6;
-    background-image: linear-gradient(to left top, #7166c2, #6672ce, #597dd8, #4988e1, #3593e9,
-         #269cee, #14a5f1, #00aef4, #00b8f5, #00c1f5, #00caf4, #00d2f2);
-}
 .sons-intes-pag img{
     height: 10%;
     max-width: 184px;
     max-height: 184px;
     min-height: 184px;
+}
+
+.container-produtos{
+    display: flex;
+}
+
+.line-icon{
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    height:30rem;
+    width: 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;   
+}
+
+.box-icon{
+    border-radius: 5px;
+    margin-top: 10px ;
+    margin: 10px;
+    border: 1px solid #666;
+    width:60px;
+    height:60px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
+
+}
+
+.box-icon i{
+    font-size: 20px;
+}
+
+.box-icon span{
+    color: #000000;
+    padding: 5px;
+    font-size: 9px;
+  
+}
+
+.produtos{
+    border-radius: 10px;
+    margin-left: 5rem;
+    border: 1px solid rgb(13, 15, 28);
+    background-color: #ffffff;
+    margin-top: 10px;
+    width: 60rem;
+    height:30rem;
 }
