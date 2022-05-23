@@ -1,3 +1,0 @@
-/node_modules/ 
-package-lock.json 
-#Ignorar arquivos do node modules e do package.json.
