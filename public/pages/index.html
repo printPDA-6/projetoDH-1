@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/public/style/main.css">
+    <link rel="shortcut icon" href="/public/img/favicon.ico" type="image/x-icon" >
+    <title>LifeStore</title>
+</head>
+
+<body>
+    
+    <div class="container-all">
+
+        <header> 
+
+            <div class = "container-logo">
+        
+                 <img  class = "logo" src="/public/img/logo.png" alt="logo" />
+        
+                 <a href="buscar.html" title="Buscar produtos"><li class="li--style--gold"> Buscar </li></a>
+        
+            </div>
+            
+                <ul>
+        
+                    <a href="#" title="Postar produtos"><li class="li--style--gold"> <i class="bi bi-send"></i> Postar </li></a>
+        
+                    <a href="#" title="Visualizar itens no carrinho"><li class="li--style--gold"><i class="bi bi-cart2"></i> Carrinho </li></a>
+        
+                    <a href="#" title="Converse com os vendedores"><li class="li--style--gold"><i class="bi bi-chat-left-dots"></i> Chat</li></a>
+        
+                    <a href="#" title="Conhesa os vendedores"><li class="li--style--gold"><i class="bi bi-people-fill"></i> Vendedores</li></a>
+        
+                    <a class = "button-criar-conta" href="login.html"><li class="color-gold">Crie sua conta</li></a>
+        
+                </ul>
+            
+        </header>
+        
+        <div class = "container-header" >
+            
+            <form  class = "container-search" action="#">
+        
+                <input class = "search"  type="text" name="pesq" id="pesq-main" placeholder="A procura de...">
+            
+                <button id="search" class = "buton-style"type="submit" ><i class="bi bi-search search-icon btn-src" id ="ico-input"></i></button>
+                
+            </form>       
+                    
+            <div class = "container-icos row">
+                
+                <ul class="header-nav-icons">
+    
+                    <a href="#">
+                    
+                        <img class="icos-header"  src="https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_01.png" alt="img-Celular">
+        
+                        <span class="span-header" type="label">Celulares</span>
+                    
+                    </a>
+        
+                    <a href="#">
+                        
+                        <img class="icos-header"  src="https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_11.png" alt="img-imoves">
+        
+                        <span class="span-header" type="label">Móveis</span>
+                        
+                    </a>
+        
+                    <a href="#">
+                        
+                        <img class="icos-header"  src="https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_02.png" alt="img-Relogio"> 
+        
+                        <span class="span-header" type="label">Acessórios</span>
+                        
+                    </a>
+        
+                    <a href="#">
+                        
+                        <img class="icos-header" src="https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_09.png" alt="Audio/Musicas">
+        
+                        <span class="span-header" type="label">Audios</span>
+                        
+                    </a>
+        
+                    <a href="#">
+                        
+                        <img class="icos-header" src="	https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_35.png" alt="img-Esporte">
+                        
+                        <span class="span-header" type="label">Esportes</span>
+                        
+                    </a>
+        
+                    <a href="#">
+        
+                        <img class="icos-header"src="	https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_19.png" alt="img-Ropas">
+        
+                        <span class="span-header" type="label">Roupas</span>
+        
+                    </a>
+        
+                    <a href="#">
+        
+                        <img class="icos-header" src="https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_12.png" alt="img-Games">
+        
+                        <span class="span-header" type="label">Games</span>
+                        
+                    </a>
+        
+                    <a href="#">
+        
+                        <img class="icos-header" width="100%"  src="https://www.casasbahia-imagens.com.br/criacao/01-home/icones-depto/2022/03-mar/11/slot_16.png" alt="img-Ferramentas">
+        
+                        <span class="span-header" type="label">Ferramentas</span>
+        
+                    </a>
+                                                
+                </ul>
+                    
+            </div> 
+        
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+        
+              <div class="carousel-item active">
+        
+                <img src="https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1653063033981-home-sliderdesktop-cupom.jpg" class="d-block w-100" alt="...">
+        
+              </div>
+        
+              <div class="carousel-item">
+        
+                <img src="https://http2.mlstatic.com/D_NQ_616101-MLA49598046841_042022-OO.webp" class="d-block w-100" alt="...">
+        
+              </div>
+        
+              <div class="carousel-item">
+        
+                <img src="https://http2.mlstatic.com/storage/splinter-admin/o:f_webp,q_auto:best/1653063077729-home-sliderdesktop.jpg"  class="d-block w-100" alt="...">
+        
+              </div>
+        
+            </div>
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        
+              <span class="carousel-control-prev-icon  btn-dark " aria-hidden="true"></span>
+        
+              <span class="visually-hidden">Previous-Car</span>
+        
+            </button>
+        
+            <button class="carousel-control-next b" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        
+              <span class="carousel-control-next-icon  btn-dark" aria-hidden="true"></span>
+        
+              <span class="visually-hidden">Next-Car</span>
+        
+            </button>
+        
+        </div>
+    <div>
+        <h2 style="text-align:center;margin-top: 20px; font: 10px; font-family: 'Courier New', Courier, monospace; color: rgb(49, 49, 49);">Aproveite agora o cupon "StoryOn"!</h2>
+    <div class="container container-body">
+
+        <div class="info-text">
+
+            <h2 class="section-h2"> Baseada na sua última visita </h2>
+
+            <a href="#">Ver historico</a>
+
+        </div>
+
+        <div class="row container-ultima-visita">
+
+            <div class="card">
+                <img  class="card-img"src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+
+                    <small><del><R1>20.00</R1></del></small>
+
+                </span>
+
+                <span class="valor-info">
+                    R$1.254          
+                </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254              
+                </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                     <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+        </div>
+
+        <div class="info-text">
+
+            <h2 class="section-h2">Ofertas do dia</h2>
+
+            <a href="#">Ver mais</a>
+
+        </div>
+
+        <div class="row container-Ofertas-do-dia">
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254              
+                </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+        </div>
+
+        <div class="info-text">
+
+            <h2 class="section-h2">Você também pode gostar</h2>
+
+            <a href="#">Ver todas</a>
+
+        </div>
+
+        <div class="row container-sugestao">
+            
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254            
+                 </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254       
+                </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+            <div class="card">
+            
+                <img class="card-img" src="https://http2.mlstatic.com/D_Q_NP_876877-MLA48317871429_112021-P.webp" alt="">
+
+                <span class="info-alteração-de-valor">
+                    <small><del>20.000</del></small>
+                </span>
+
+                <span class="valor-info">
+                    R$1.254
+                </span>
+
+                <span class="info-entrega">
+                    Frete grátis
+                    <svg viewBox="0 0 56 18" xmlns="http://www.w3.org/2000/svg" class="dynamic-carousel__shipping-container-fulfillment" width="38px" height="12px"><path d="M3.545 0L0 10.286h5.91L3.544 18 13 6.429H7.09L10.637 0zm14.747 14H15.54l2.352-10.672h7.824l-.528 2.4h-5.072l-.352 1.664h4.944l-.528 2.4h-4.96L18.292 14zm13.32.192c-3.28 0-4.896-1.568-4.896-3.808 0-.176.048-.544.08-.704l1.408-6.352h2.8l-1.392 6.288c-.016.08-.048.256-.048.448.016.88.688 1.728 2.048 1.728 1.472 0 2.224-.928 2.496-2.176L35.5 3.328h2.784l-1.392 6.336c-.576 2.592-1.984 4.528-5.28 4.528zM45.844 14h-7.04l2.352-10.672h2.752L42.1 11.6h4.272l-.528 2.4zm9.4 0h-7.04l2.352-10.672h2.752L51.5 11.6h4.272l-.528 2.4z" fill="#00a650" fill-rule="evenodd"></path></svg>
+                </span>
+
+                <p class="info-prod"> 
+                    Moto G20 Dual Sim 64 Gb Grafite 4 Gb Ram
+                </p>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="sobre-footer">
+                <span></span>
+            </div>
+
+            <div class="redes-footer">
+                <span></span>
+            </div>
+
+            <div class="contato-footer">
+                <span></span>
+            </div>
+
+            <div class="minha-conta-footer">
+                <span></span>
+            </div>
+
+            <div class = "life-point-footer">
+                <span></span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script src="script/script.js">
+    </script>
+
+</body>
+</html>
