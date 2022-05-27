@@ -1,9 +1,12 @@
 
 /* paletas de cores */
 .color-main{
+    --color-main:rgb(0, 0, 0);
+    --color-sub-main:#fff;
+    --color-style: background-image: radial-gradient(circle at 53.43% 50%, #6b3f60 0, #61345d 16.67%, #542a5b 33.33%, #441f59 50%, #301657 66.67%, #141056 83.33%, #000d56 100%);
+    --color-sub-style:radial-gradient(circle at 53.43% 50%, #341e2e 0, #2e172b 16.67%, #3b2440 33.33%, #302138 50%, #120a1f 66.67%, #0a091c 83.33%, #03071e 100%);
 
 }
-
 
 body{
     background-color: #b7b3b333;
@@ -18,7 +21,7 @@ header{
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 5rem;
 }
 
 /* CSS de toda a pagina */
@@ -163,7 +166,7 @@ li{
 }
 
 /* Css dos h2 do body da pagina */
-.section-h2{
+.style-h2{
     margin-bottom: 20px;
     font-size: 26px;
     font-weight: 300;
@@ -183,7 +186,7 @@ li{
 }
 
 .container-body{
-   
+    
 }
 
 /* Css do container dos cards de ultimas visitas */
@@ -208,12 +211,13 @@ li{
     max-height: 435px;
     border-radius: 15px;
     margin-right: 10px;
-  
-}
 
+}
 
 /* Css global das imagens dos cards */
 .card-img{
+    padding: auto;
+    padding: 10px;
     max-width: 250px ;
     max-height: 250px;
 }
@@ -224,7 +228,7 @@ li{
 }
 .info-alteração-de-valor:hover{
 
-   color: #666;
+   color: rgb(255, 242, 0);
 }
 /* Css global dos valores dos produtos */
 .valor-info{
@@ -241,5 +245,97 @@ li{
     font: 2px;
     color: grey;
 }
+/* section-intereses */
+.container-intereses{
+    
+}
 
-footer{}
+.box1-intereses{
+    display: flex;
+    width: 50rem;
+    height: 15rem;
+    background-color: #fff;
+    color: #03071e;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+
+}
+.box1-intereses:hover {
+    transition: 0.99s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+.box1-intereses h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #666;
+}
+
+.box1-intereses img{
+    width:180px ;
+    height:140px ;
+    content: "";
+    clear: both;
+    display: table;
+    border-radius: 10px;
+}
+
+.text-intereses{
+    padding-left: 20px;
+    padding-top: 11px ;
+}
+
+.box2-intereses{
+    display: flex;
+    border-radius: 10px;
+    width: 50rem;
+    height: 15rem;
+    background-color: #fff;
+    color: #03071e;
+    padding: 10px;
+   
+}
+
+.box2-intereses:hover {
+    transition: 0.99s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box2-intereses h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #666;
+}
+
+.box2-intereses img{
+    width:180px ;
+    height:140px ;
+    float: right;
+    border-radius: 10px;
+}
+
+.box2-intereses::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.text-intereses a{
+    background-color: #1259C3;
+    width: 10px;
+    height: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-intereses a:hover{
+    background-color: #073b8a;
+}
+.text-intereses span{
+    color: rgb(67, 67, 67);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
