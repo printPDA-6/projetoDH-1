@@ -185,6 +185,9 @@ li{
     margin-top: 6px;
 }
 
+.center-aling{
+    margin-left:15%;
+}
 .container-body{
     
 }
@@ -210,8 +213,14 @@ li{
     max-width: 224px;
     max-height: 435px;
     border-radius: 15px;
-    margin-right: 10px;
+    margin-right: 20px;
+    
 
+}
+
+.card:hover{
+    transition: 0.99s all;
+    box-shadow: 0 8px 8px 0 rgba(1, 0, 0, 0.389), 0 6px 25px 0 rgba(0, 0, 0, 0.48);
 }
 
 /* Css global das imagens dos cards */
@@ -247,7 +256,7 @@ li{
 }
 /* section-intereses */
 .container-intereses{
-    
+   margin-right: 15%;
 }
 
 .box1-intereses{
@@ -256,7 +265,7 @@ li{
     height: 15rem;
     background-color: #fff;
     color: #03071e;
-    margin-right: 15px;
+    margin-right: 10px;
     border-radius: 10px;
     padding: 10px;
     float: right;
@@ -268,7 +277,7 @@ li{
 }
 .box1-intereses h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     color: #666;
 }
 
@@ -304,7 +313,7 @@ li{
 
 .box2-intereses h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 20px;
     color: #666;
 }
 
