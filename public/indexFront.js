@@ -19,8 +19,7 @@ function getOfertasDoDia() {
 }
 
 function listaProdutos(produtos, nomeDaLista){
-    // console.log(produtos)
-    // console.log(idLista)
+
     try{
         var produtosUltima = document.getElementById(nomeDaLista);
 
@@ -64,11 +63,13 @@ function listaProdutos(produtos, nomeDaLista){
 
             //(1)adicionado a classe da img do produto
             img.setAttribute("class","card-img")
+
             //(2)adicionado o src da imagen
             img.setAttribute("src", prod.img);
 
             //Adicionado a claase da span de alteração~de valor 
             spanAltValor.setAttribute("class","info-alteração-de-valor");
+
             //adiionado o valor a teg small 
             small.innerHTML = prod.valorAlt;
 
@@ -79,6 +80,7 @@ function listaProdutos(produtos, nomeDaLista){
             //adicionado a classe ao span que guarda o svg de entrega.
             spanEntrega.setAttribute("class","info-entrega")
             spanEntrega.innerHTML = "Frete grátis"
+
             //Adicionado os atributos do svg
             svgEntrega.setAttribute("viewBox","0 0 56 18");
             svgEntrega.setAttribute("xmlns","http://www.w3.org/2000/svg")
