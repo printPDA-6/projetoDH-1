@@ -1,6 +1,6 @@
 var id =()=> {return Math.floor(Math.random() * 100+ 1)}
 
-var prodOfertasDay = [
+var   audio = [
     
     { id: id(), name: 'iphone G9 Play', namePoste:"jota", valor: "690.90",  img: "https://http2.mlstatic.com/D_Q_NP_839182-MLA49040256756_022022-W.webp", info: 'Impressora a cor multifuncional HP Deskjet Ink Advantage 2774 com wifi preta', qtd: 12.000, valorAlt:780.00}
 
@@ -18,4 +18,4 @@ var prodOfertasDay = [
 
 ]
 
-module.exports = prodOfertasDay
+module.exports = audio;
