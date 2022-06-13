@@ -18,12 +18,24 @@ function getOfertasDoDia() {
         .catch(error => console.error(error))
 };
 
+function getGostos() {
+    fetch('http://localhost:1717/podegostar')
+    .then(res => res.json())
+    .then(gosto =>{
+        listaProdutos(gosto,"Vocetmbgostos")
+    })
+    .catch(error => console.error(error))
+    
+}
+
 function listaProdutos(produtos, nomeDaLista) {
 
     try {
         var produtosUltima = document.getElementById(nomeDaLista);
 
         produtos.forEach(function (prod) {
+
+            console.log(prod.namePoste)
 
             //Criando a div global do card
             var divCard = document.createElement("div");
@@ -40,6 +52,10 @@ function listaProdutos(produtos, nomeDaLista) {
             //teg que deicha o valor alterado pequeno.
             var small = document.createElement("small");
 
+            // teg dell que ira add um risco ao valor
+
+            var del = document.createElement("del");
+
             //span que armazena o valor do produto
             var spanValor = document.createElement("span");
 
@@ -54,6 +70,10 @@ function listaProdutos(produtos, nomeDaLista) {
 
             // P que guarda a descrição do produto
             var p = document.createElement("p");
+
+            //Nome de quem postou o produto
+            var spanPostName = document.createElement("span");
+
             //---------------------------------------
 
             // Adicionando os atributos das tegs
@@ -71,15 +91,15 @@ function listaProdutos(produtos, nomeDaLista) {
             spanAltValor.setAttribute("class", "info-alteração-de-valor");
 
             //adiionado o valor a teg small 
-            small.innerHTML = prod.valorAlt
+            del.innerText = prod.valorAlt
 
             //Adicionado a claase do span de valor
             spanValor.setAttribute("class", "valor-info")
-            spanValor.innerHTML = ("R$" + prod.valor)
+            spanValor.innerText = ("R$ " + prod.valor)
 
             //adicionado a classe ao span que guarda o svg de entrega.
             spanEntrega.setAttribute("class", "info-entrega")
-            spanEntrega.innerHTML = "Frete grátis"
+            spanEntrega.innerText = "Frete grátis"
 
             //Adicionado os atributos do svg
             svgEntrega.setAttribute("viewBox", "0 0 56 18");
@@ -96,9 +116,14 @@ function listaProdutos(produtos, nomeDaLista) {
 
             //(1)Adicionado a caase da teg p.
             p.setAttribute("class", "info-prod");
+
             //(2)Adicionado o valor do paragrafo.
             p.innerText = prod.info;
 
+            //Add a class oa span post-name
+            spanPostName.setAttribute("class", "post-name");
+            spanPostName.innerText = ("Por " + prod.namePoste);
+            
             //-------------------------------
 
             // Adicionando os filhos aos seus pais.
@@ -107,6 +132,7 @@ function listaProdutos(produtos, nomeDaLista) {
             a.appendChild(img);
             divCard.appendChild(a);
 
+            small.appendChild(del)
             spanAltValor.appendChild(small)
             divCard.appendChild(spanAltValor)
             divCard.appendChild(spanValor);
@@ -115,7 +141,11 @@ function listaProdutos(produtos, nomeDaLista) {
             spanEntrega.appendChild(svgEntrega);
             divCard.appendChild(spanEntrega);
 
+            //ADD a descrição do produto ao card
             divCard.appendChild(p);
+            
+            //Adicionado o span de nome do poste dentro da div
+            divCard.appendChild(spanPostName);
 
         })
 
@@ -129,4 +159,5 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Página completamente carregada')
     getProdutos();
     getOfertasDoDia();
+    getGostos();
 });
