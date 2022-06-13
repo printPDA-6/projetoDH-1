@@ -9,29 +9,37 @@ app.set("view engine", "ejs");
 // page init
 app.get('/', (req, res) => {
    res.render("pages/index")
-})
+});
+
 // page buscar
 app.get('/buscar', (req, res) => {
    res.render('pages/buscar')
-})
+});
+
 // page login
 app.get('/login', (req, res) => {
    res.render('pages/login')
-})
+});
+
 //page arry de produtos
 app.get('/produtos', (req, res) => {
    const produtos = require("./model/ultimaVisita");
    console.log(produtos);
    res.send(produtos);
-})
+});
+
 // page arry de produtos 2
 app.get('/ofertas-dia', (req, res) => {
    const ofertas = require("./model/ofertasDia");
    console.log(ofertas)
    res.send(ofertas);
-
-})
-
+});
+//
+app.get('/podegostar', (req, res) => {
+   const gosto = require("./model/podegostaruser");
+   console.log(gosto)
+   res.send(gosto);
+});
 
 app.listen(port, () => {
    console.log(`Servidor Rodando! Porta: ${port}`)
