@@ -34,7 +34,8 @@ app.get('/ofertas-dia', (req, res) => {
    console.log(ofertas)
    res.send(ofertas);
 });
-//
+
+// page arry de produtos 3
 app.get('/podegostar', (req, res) => {
    const gosto = require("./model/podegostaruser");
    console.log(gosto)
