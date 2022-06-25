@@ -95,7 +95,7 @@ function listaProdutos(produtos, nomeDaLista) {
 
             //Adicionado a claase do span de valor
             spanValor.setAttribute("class", "valor-info")
-            spanValor.innerText = ("R$ " + prod.valor)
+            spanValor.innerText = ("R$" + prod.valor)
 
             //adicionado a classe ao span que guarda o svg de entrega.
             spanEntrega.setAttribute("class", "info-entrega")
