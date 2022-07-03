@@ -156,7 +156,7 @@ function listaProdutos(produtos, nomeDaLista) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('Página completamente carregada')
+    console.log('Página completamente carregada!')
     getProdutos();
     getOfertasDoDia();
     getGostos();
