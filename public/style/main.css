@@ -100,7 +100,7 @@ li {
 }
 
 .button-criar-conta {
-    background-color: rgb(107, 107, 107);
+    background-image: radial-gradient(circle at 53.43% 50%, #341e2e 0, #2e172b 16.67%, #3b2440 33.33%, #302138 50%, #120a1f 66.67%, #0a091c 83.33%, #03071e 100%);
     color: white !important; 
     padding: 2px !important;
     height: 10px !important;
@@ -113,7 +113,7 @@ li {
 .button-criar-conta:hover{
     color: yellow !important;
     border: 1px solid slateblue;
-    background-color: rgb(53, 53, 53);
+    background-image: radial-gradient(circle at 53.43% 50%, #341e2e 0, #2e172b 16.67%, #3b2440 33.33%, #302138 50%, #120a1f 66.67%, #0a091c 83.33%, #03071e 100%);
 }
 
 /* Css do container que engloba o inputs de pesquisa e os icons de navegação do header */
@@ -198,7 +198,7 @@ li {
 }
 
 .span-header:hover{
-    color: yellow;
+    color: #9b0470;
 }
 
 .carousel {
@@ -434,7 +434,7 @@ li {
 }
 
 footer{
-    background-color: #002838;
+    background-image: radial-gradient(circle at 53.43% 50%, #341e2e 0, #2e172b 16.67%, #3b2440 33.33%, #302138 50%, #120a1f 66.67%, #0a091c 83.33%, #03071e 100%);
     color: white;
     margin-top: 50px;
     justify-content: center;
