@@ -1,4 +1,3 @@
-
 function buscarPage(){
     console.log('Página Buscar')
     fetch('http://localhost:1717/buscar')
