@@ -28,7 +28,9 @@ function getGostos() {
     
 }
 
-function listaProdutos(produtos, nomeDaLista) {
+
+
+function listaProdutos(produtos, nomeDaLista, BUSCAR ) {
 
     try {
         var produtosUltima = document.getElementById(nomeDaLista);
@@ -154,6 +156,8 @@ function listaProdutos(produtos, nomeDaLista) {
     }
 
 }
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Página completamente carregada!')
