@@ -21,6 +21,11 @@ app.get('/login', (req, res) => {
    res.render('pages/login')
 });
 
+app.get('/cadastro',(req,res)=>{
+
+   res.render()
+})
+
 //page arry de produtos
 app.get('/produtos', (req, res) => {
    const produtos = require("./model/ultimaVisita");
