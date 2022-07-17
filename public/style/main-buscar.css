@@ -73,13 +73,17 @@ img{
 }
 
 li:hover{
-  
     color: #ffcc00;
     transition: 0.1s all;
     
 }
 
 .input-container{
+    height: 34px;
+    width: 594px;
+    left: 65px;
+    top: 49px;
+    border-radius: 59px;
     display: flex;
     justify-content:center;
 }
