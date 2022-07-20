@@ -7,7 +7,14 @@
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: #b7b3b333;
     display: flex;
     justify-content: center;
@@ -95,10 +102,9 @@ li {
     color: white !important; 
     padding: 2px !important;
     height: 10px !important;
-    border-radius: 20px;
+    border-radius: 10%;
     margin-right: 10px;
     transition: 0.99s;
-    border: 2px solid rgb(152, 101, 203);
 
 }
 .button-criar-conta:hover{
@@ -169,7 +175,7 @@ li {
     background-color: rgb(255, 255, 255);
     margin: 10px;
     display: flex;
-    width: 90px;
+    width: 5.5rem;
     /* background-image: linear-gradient( 138deg,  rgba(32, 199, 255, 0.577) 36.7%, rgba(0,8,187,1) 84.4%, rgba(255,255,255,1) 119.7% ); */
     border-radius: 250px;
     border: 2px outset blueviolet;
