@@ -21,9 +21,9 @@ app.get('/login', (req, res) => {
    res.render('pages/login')
 });
 
-app.get('/cadastro',(req,res)=>{
-
-   res.render()
+//page cadastro
+app.get('/cadastro', (req,res) =>{
+   res.render('pages/cadastro')
 })
 
 //page arry de produtos
