@@ -80,12 +80,12 @@ aside{
 .box-login{
     background-image: linear-gradient(to right top, #000000, #1c010f, #29031e, #330031, #37004a, #360051, #340058, #310060, #360153, #380548, #370a3d, #340f34);
     color: white;
-    max-width: 23em;
+    max-width: 23rem;
     min-width: 23rem;
     max-height: 30rem;
     min-height: 30rem;
     padding: 15px;
-    /* margin-bottom: 10px; */
+    box-shadow: 0 8px 8px 0 rgba(1, 0, 0, 0.389), 0 6px 25px 0 rgba(0, 0, 0, 0.48);
     border-radius: 10px;
 }
 
@@ -191,3 +191,15 @@ butt
 .container-cadastro a:hover{
     color: burlywood
 }
+
+@media only screen and (max-width: 800px) {
+    aside {
+      display: none;
+    }
+    .box-login{
+        max-width: 22rem;
+        min-width: 22rem;
+        max-height: 30rem;
+        min-height: 30rem;
+    }
+  }
