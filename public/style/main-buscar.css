@@ -1,162 +1,60 @@
-body{
-    background-color: #b7b3b333;
-    /* display: flex; */
-    justify-content: center;
-}
-.header{
-    flex-direction: row;
-    font:  13px arial,sans-serif;
-    background-color: #ffffff;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-}
-.container-{
-   height: 50%;
-}
-
-.container-all-pesq{
-   margin-top:37px;
-} 
-
-.img-logo{
-    height: 9%;
-    width: 25%;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.title{
-    display: flex;
-    align-items: center;
-}
-ul{
-    margin:1 ;
-    margin-bottom:0;
-}
-
-a{
-    text-decoration: none;
-    /* color: rgb(255, 255, 255); */
-}
-  
-li{
-    list-style: none;
-    /* color: #403b3b; */
-    color:  #0c5149;
-    display: flex;
-    display: inline-block;
-    margin: 20px;
-}
-
-img{
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.button-criar-conta{
-    border: 2px solid rgb(110, 20, 167);
-    padding: 10px;
-    border-radius:10px;
-    margin-right: 10px;
-    
-}
-
-.button-criar-conta:hover{
-    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
-    border: 2px solid rgb(144, 83, 180);
-    border-radius: 50px;
-    color: rgb(255, 238, 4);
-    transition: 0.79s all;
-}
-
-li:hover{
-    color: #ffcc00;
-    transition: 0.1s all;
-    
-}
-
-.input-container{
-    height: 34px;
+.busca {
+    position: relative;
     width: 594px;
+    height: 34px;
     left: 65px;
     top: 49px;
+    background: #D9D9D9;
     border-radius: 59px;
-    display: flex;
-    justify-content:center;
 }
 
-.search{
-    
-    padding:1em;
-    border: none;
-    box-sizing: border-box;
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    font:10px ;
-    margin: none;
-    width: 75%;
-    height: 3rem;
-    margin-top: 1rem;
-    border-start-start-radius:20px;
-    border-end-start-radius:20px; 
-}
-
-.buton-style{
-    background-color: #dcdcdc;
-    border:none;
-    box-sizing: border-box;
-    margin-right: 4px;
-    width:3%;
-    height: 3rem;
-    margin-top: 1rem;
-    border-start-end-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.btn-src:hover{
-    color: #ffcc00;
-    transition: 0.1s;
-}
-
-.search-icon{
-   
-    color:rgb(0, 0, 0);
-}
-
-.intes-pag{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.sons-intes-pag img{
-    height: 10%;
-    max-width: 184px;
-    max-height: 184px;
-    min-height: 184px;
-}
-
-.container-produtos{
+.container {
     display: flex;
 }
 
-.line-icon{
-    background-color: #fff;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 1px solid rgb(0, 0, 0);
-    height:30rem;
-    width: 11rem;
+.container-header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;   
 }
 
-.box-icon{
+.img-logo {
+    width: 113px;
+    height: 44px;
+}
+
+.li-header {
+    width: 46px;
+    height: 18px;
+    left: 378px;
+    top: 11px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.box-anuncio {
+    position: absolute;
+    width: 461px;
+    height: 118px;
+    left: 209px;
+    top: 108px;
+    background: #D9D9D9;
+    border-radius: 13px;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    width: 708px;
+    height: 40px;
+    left: 8px;
+    top: 0px;
+    background: #D9D9D9;
+}
+
+.icon {
     border-radius: 5px;
     margin-top: 10px ;
     margin: 10px;
@@ -164,31 +62,16 @@ li:hover{
     width:60px;
     height:60px;
     padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     color: #ffffff;
-    background-image: radial-gradient(circle at -18.3% 68.3%, #0055ff 0, #004bfc 12.5%, #4840f3 25%, #7030e8 37.5%, #8c19dc 50%, #a200cf 62.5%, #b300c1 75%, #c100b2 87.5%, #cd00a3 100%);
-
 }
 
-.box-icon i{
-    font-size: 20px;
-}
-
-.box-icon span{
-    color: #000000;
-    padding: 5px;
-    font-size: 9px;
-  
-}
-
-.produtos{
-    border-radius: 10px;
-    margin-left: 5rem;
-    border: 1px solid rgb(13, 15, 28);
-    background-color: #ffffff;
-    margin-top: 10px;
-    width: 60rem;
-    height:30rem;
+.categorias {
+    width: 11rem;
+    height: 30rem;
+    justify-content: center;
+    background: #D9D9D9;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
