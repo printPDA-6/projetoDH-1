@@ -27,21 +27,21 @@ app.get('/cadastro', (req,res) =>{
 
 //page arry de produtos
 app.get('/produtos', (req, res) => {
-   const produtos = require("./model/ultimaVisita");
+   const produtos = require("./public/model/ultimaVisita");
    console.log(produtos);
    res.send(produtos);
 });
 
 // page arry de produtos 2
 app.get('/ofertas-dia', (req, res) => {
-   const ofertas = require("./model/ofertasDia");
+   const ofertas = require("./public/model/ofertasDia");
    console.log(ofertas)
    res.send(ofertas);
 });
 
 // page arry de produtos 3
 app.get('/podegostar', (req, res) => {
-   const gosto = require("./model/podegostaruser");
+   const gosto = require("./public/model/podegostaruser");
    console.log(gosto)
    res.send(gosto);
 });
