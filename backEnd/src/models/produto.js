@@ -33,3 +33,5 @@ const produto = db.define('produto', {
         allowNull: false
     }
 });
+
+module.exports = produto;
