@@ -28,8 +28,6 @@ function getGostos() {
     
 }
 
-
-
 function listaProdutos(produtos, nomeDaLista, BUSCAR ) {
 
     try {
