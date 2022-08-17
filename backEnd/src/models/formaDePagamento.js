@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const db = require("../connection/db");
 
-const formaDePagamento = db.define("produto",{
+const formaDePagamento = db.define("formaDePagamento",{
     id_formaDePagamento:{
        type: Sequelize.DataTypes.INTEGER,
        autoIncrement:true,
@@ -19,5 +19,14 @@ const formaDePagamento = db.define("produto",{
         Sequelize.DataTypes.CHAR(1)
     },
 
+    pagamento_pix:{
+        type: Sequelize.DataTypes.CHAR(1)
+    },
+
+    pagamento_paypal:{
+        type: Sequelize.DataTypes.CHAR(1)
+    }
+
    
 })
+module.exports = formaDePagamento;
