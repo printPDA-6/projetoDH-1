@@ -12,9 +12,8 @@ const Sequelize = require("sequelize");
     )
 
     module.exports = sequelize;
-<<<<<<< Updated upstream
-=======
-}
+
+
 
 else {
     console.log("STAGING");
