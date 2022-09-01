@@ -1,14 +1,14 @@
 function buscarPage(){
     console.log('Página Buscar')
     fetch('http://localhost:1717/buscar')
-    .then(resposta => resposta.json())
+    .then(resposta => resposta.json("Página buscar"))
     .then(buscar => {
-        console.log('Bem vindos à página Buscar')
+        console.log(buscar)
     })
-    .catch(error => console.error(error))
+    .catch(error => console.error("Erro interno, desculpe o transtorno", error));
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-    console.log('Página totalmente carregada')
+    console.log('Bem vindos(as) à página buscar!')
     buscarPage();
 })
