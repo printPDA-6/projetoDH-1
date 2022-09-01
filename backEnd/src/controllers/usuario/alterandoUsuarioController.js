@@ -1,10 +1,10 @@
 const alterandoUsuarioController = async (req, res)=>{
     let usuario = require('../../models/usuario');
     const id = req.params.idUsuario;
-    const {nome, email, CPF, Senha} = req.body;
+    const {primeiroNome, email, CPF, Senha} = req.body;
     const pessoa = await usuario.findByPk(id);
     await usuario.update({
-        nome: nome || pessoa.nome,
+        primeiroNome: primeiroNome || pessoa.primeiroNome,
         email: email || pessoa.email,
         CPF: CPF || pessoa.CPF,
         Senha: Senha || pessoa.Senha

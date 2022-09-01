@@ -9,15 +9,15 @@ const formaDeenvio = db.define('Envio', {
         primaryKey: true
     },
     Correio: {
-        type: Sequelize.DataTypes.STRING,
+        type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false
     },
     Sedex: {
-        type: Sequelize.DataTypes.STRING,
+        type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false
     },
     Retirada: {
-        type: Sequelize.DataTypes.STRING,
+        type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false
     }
 });
