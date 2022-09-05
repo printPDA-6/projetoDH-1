@@ -17,6 +17,6 @@ usuarioRotas.get('/usuario', pegandoUsuarioController);
 
 usuarioRotas.put('/usuario/:id', alterandoUsuarioController);
 
-usuarioRotas.delete('/usuario', deletandoUsuarioController);
+usuarioRotas.delete('/usuario/:idUsuario', deletandoUsuarioController);
 
 module.exports = usuarioRotas;

@@ -22,7 +22,7 @@ const produto = db.define('produto', {
     },
     Descricao: {
         type: Sequelize.DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     Img: {
         type: Sequelize.DataTypes.STRING,
@@ -30,7 +30,7 @@ const produto = db.define('produto', {
     },
     Vendedor: {
         type: Sequelize.DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     }
 });
 

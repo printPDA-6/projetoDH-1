@@ -6,7 +6,7 @@ const formaDePagamento = db.define("formaDePagamento",{
        type: Sequelize.DataTypes.INTEGER,
        autoIncrement:true,
        allowNull:false,
-       primaryKEY:true
+       primaryKey:true
     },
 
     pagamento_cartao: {

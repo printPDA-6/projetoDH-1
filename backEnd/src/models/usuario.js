@@ -14,11 +14,11 @@ const Usuario = db.define('usuario', {
     },
     CPF: {
         type: Sequelize.DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     Email: {
         type: Sequelize.DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     Senha: {
         type: Sequelize.DataTypes.STRING,
