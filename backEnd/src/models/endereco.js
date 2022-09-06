@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const db = require("../connection/db");
 
-const endere = db.define("endereco",{
+const endereco = db.define("endereco",{
     endereco_id:{
         type: Sequelize.DataTypes.INTEGER,
         autoIncrement: true,
@@ -15,7 +15,7 @@ const endere = db.define("endereco",{
 
     },
 
-    endereco_cep_impresa:{
+    endereco_cep_empresa:{
         type: Sequelize.DataTypes.CHAR(8)
 
     },
