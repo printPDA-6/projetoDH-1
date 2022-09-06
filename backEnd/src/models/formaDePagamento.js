@@ -10,21 +10,21 @@ const formaDePagamento = db.define("formaDePagamento",{
     },
 
     pagamento_cartao: {
-        type: Sequelize.DataTypes.CHAR(1)
+        type: Sequelize.DataTypes.BOOLEAN
 
     },
 
     pagamento_boleto: {
         type:
-        Sequelize.DataTypes.CHAR(1)
+        Sequelize.DataTypes.BOOLEAN
     },
 
     pagamento_pix:{
-        type: Sequelize.DataTypes.CHAR(1)
+        type: Sequelize.DataTypes.BOOLEAN
     },
 
     pagamento_paypal:{
-        type: Sequelize.DataTypes.CHAR(1)
+        type: Sequelize.DataTypes.BOOLEAN
     }
 
    

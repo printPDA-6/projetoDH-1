@@ -1,11 +1,11 @@
 const deletandoUsuarioController = async (req, res) => {
     let usuario = require('../../models/usuario')
-    const id = req.params.idUsuario;
-    const usuarioDeletado = await usuario.findByPk(id);
-    const pessoa = await usuario.findByPk(id);
+    const idUsuario = req.params.idUsuario;
+    const usuarioDeletado = await usuario.findByPk(idUsuario);
+    const pessoa = await usuario.findByPk(idUsuario);
     await usuario.destroy({
         where: {
-            id: id
+            idUsuario: idUsuario
         }
     })
     return res.json({usuario: 'usuarioDeletado', pessoa: pessoa});

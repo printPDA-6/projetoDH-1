@@ -3,7 +3,7 @@ const alterandoProdutoController = async (req, res)=>{
     const id = req.params.idProduto;
     const {Nome, Qtd, Valor, Descricao, Img, Vendedor} = req.body;
     const produtos = await produto.findByPk(id);
-    await usuario.update({
+    await produto.update({
         Nome: Nome || produtos.Nome,
         Qtd: Qtd || produtos.Qtd,
         Valor: Valor || produtos.Valor,
