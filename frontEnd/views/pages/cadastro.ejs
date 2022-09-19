@@ -4,40 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>life/cadastro</title>
-    <link rel="stylesheet" href="/style/main-cadastro.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/style/main-login.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
 </head>
 <body>
 
     <header>
+        <a href="/"><img src="" alt=""></a>
 
-        <div class="logo">
-            <img src="" alt="">
-        </div>
-
-        <div class="opi">
-
-            <ul>
-                <li><a href="index.ejs">Voltar</a></li>
-                <li><a href="login.ejs">login</a></li>
-            </ul>
-
-        </div>
-
+        <a href="#">Suporte</a>
     </header>
 
     <div class="container">
-        
+
+
         <aside>
-            <h2 class= "h2-subtitle-typewritter"><span id ="frase-style" class = "subtitle-typewritter">LIFESTORY</span></h2>
+            
+        <h2 class= "h2-subtitle-typewritter"><span id ="frase-style" class = "subtitle-typewritter">LIFESTORY</span></h2>
+  
         </aside>
+
+        <div class="box-login">
+
+            <div class="title">
+                <h2>Cadastre-se</h2>
+            </div>
+            <div class="content-group-input">
+
+                <div class="box-group-input">
+
+                    <input class="Nome" type="text" name="cadastro-nome" id="cadastro-nome" placeholder="Digite seu Nome">
+                    
+                    <input class="Email" type="text" name="cadastro-Email" id="cadastro-Email" placeholder="Digite seu email">
     
-        <div class="container-cadastro">
+                    <input class="senha" type="password" name="cadastro-senha" id="cadastro-senha" placeholder="Digite sua senha">
+                    
+                    <input class="CPF" type="text" name="cadastro-cpf" id="cadastro-cpf" placeholder="Digite seu CPF">
     
+                    <button class="butao" onclick="criandoUsuario()" type="button">Cadastrar</button>
+    
+                </div>
+
+            </div>
+
+           <div class="container-cadastro">
+                <div class="box-cadastro">
+                    <span>Já possuo cadastro<a href="http://localhost:1717/login">&nbsp;Login</a></span>
+                </div>
+           </div>
+           
         </div>
+
     </div>
-
-    
-
+<script src="/service/usuarioFetch.js"></script>
 </body>
 </html>
