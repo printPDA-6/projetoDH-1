@@ -6,6 +6,7 @@ const cors = require("cors")
 const app = express();
 const port = 1616;
 
+
 app.use(express.json());
 app.use(cors())
 app.use(usuarioRotas)
